@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="wordLadder.css" />
+        <link rel="icon" type="image/x-icon" href="images/wordLadder.ico">
+        <script src="wordLadder.js"></script>
+        <title>Word Ladder</title>
+    </head>
+
+    <body id = "curtain" onpageshow="init()" >
+        
+        <div><p><br><br></p></div>
+        
+        <div class="py-6 py-sm-8 py-lg-10 py-xl-12 jumbotron-codelines">
+            
+            <div class="container-lg p-responsive position-relative">
+                <br>
+                <div class="d-md-flex flex-items-center gutter-md-spacious">
+                    
+                    <div class="col-md-7 text-center text-md-left ">
+                        <h1 class="alt-h0 text-white lh-condensed-ultra mb-3" id = "name">Word Ladder</h1>
+                        <p class="alt-lead mb-4" id= "prompt1">
+                            <br>
+                            This is a simple web program which calls for two English <br>
+                            words as input. The two words shall be the same in lengh<br>
+                            and reachable in the given Dictionary.json. As an out put,<br> 
+                            a chain from one word to another will be displayed, which<br> 
+                            is the Worl Ladder.<br><br>
+                        </p>
+                        <br>
+                        <h2 class = "alt-h0 text-white lh-condensed-ultra mb-3" id = "prompt2">
+                            Example: A word ladder from "data" to "code" :
+                        </h2>
+
+                        
+                    </div>
+
+                    <div class="mx-auto col-sm-8 col-md-5 hide-sm">
+                        <div class="rounded-1 text-gray bg-gray-light py-4 px-4 px-md-3 px-lg-4">
+                            
+                            
+                            <p>First Word</p>
+                            <input type="text" id="w1" class="form-control form-control-lg input-block js-email-notice-trigger" placeholder="data" onkeyup ="check_w1()">
+                            <p id = "check1"><br></p> 
+
+                            <P>Second Word</P>
+                            <input type="text"  id="w2" class="form-control form-control-lg input-block js-email-notice-trigger" placeholder="code" onkeyup ="check_w2()">
+                            <p id = "check2"><br></p> 
+                            <br>
+                            <button class="btn btn-outline btn-large f4 btn-block" onclick="showRes()">Generate The Word Ladder</button>
+                            
+                        </div>
+                    </div>
+                    
+
+                </div>
+                <br>
+                <h2 class = "alt-h0 text-white lh-condensed-ultra mb-3" id = "preResult">
+                        data -- date -- cate -- cade -- code 
+                </h2>
+                </div>
+        </div>
+
+        <div id = "signature"><p><br><br><br>516015910018 Wei Xiao-Miao<br>School of Software, Shanghai Jiao Tong University. 2018.7</div>
+
+    </body>
+
+</html>
